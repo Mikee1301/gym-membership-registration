@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Membership Registration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" type="text/css" href="./css/main.css? echo time();?>" />
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="card">
+      <div class="left-card">
+        <span class="logo">miKe.</span>
+        <p class="message">Achieve your training</p>
+        <p class="message">goals with the right plan,</p>
+        <p class="message">not with luck</p>
+      </div>
+      <div class="right-card">
+        <h2 class="form-title">Membership Form</h2>
+        <form action="memberplan.php" method="POST">
+          <input type="text" name="fname" id="fname" placeholder="Enter firstname" required>
+          <input type="text" name="lname" id="lname" placeholder="Enter lastname" required>
+          <input type="number" name="age" id="age" min="1" placeholder="Enter age" required>
+          <select name="gender" required>
+            <option value="none" selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <input type="tel" id="phone" name="phone" placeholder="Enter mobile number" required>
+          <input type="text" name="address" id="address" placeholder="Enter address" required>
+          <input class="createBtn" type="submit" name="createBtn" value="Create">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
